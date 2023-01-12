@@ -5,7 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import folium 
 import seaborn as se
-#from haversine import haversine
+from haversine import haversine
 import streamlit as st
 from PIL import Image 
 from datetime import datetime
