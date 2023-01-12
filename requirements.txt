@@ -2,7 +2,7 @@ streamlit==1.11.0
 plotly==5.9.0
 pandas==1.5.1
 numpy==1.23.4
-folium==0.13.0
+streamlit-folium==0.7.0
 matplotlib==3.6.2
 matplotlib-inline==0.1.6
 haversine==2.7.0
