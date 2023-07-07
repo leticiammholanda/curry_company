@@ -183,23 +183,23 @@ st.sidebar.markdown('### Selecione uma data limite')
 #     max_value=pd.datetime('2022, 4, 6'),
 #     format='DD-MM-YYYY')
 
-st.sidebar.markdown("""---""")
+# st.sidebar.markdown("""---""")
 
-#filtro para Round Traffic densit
+# #filtro para Round Traffic densit
 
-traffic_options=st.sidebar.multiselect(
-    'Quais as condições de trânsito?',
-    ['Low', 'Medium','High','Jam'],
-    default=['Low', 'Medium','High','Jam'])
+# traffic_options=st.sidebar.multiselect(
+#     'Quais as condições de trânsito?',
+#     ['Low', 'Medium','High','Jam'],
+#     default=['Low', 'Medium','High','Jam'])
 
-st.sidebar.markdown("""---""")
-#filtro de data
-linhas_selecionadas = df1['Order_Date'] < date_slider
-df1=df1.loc[linhas_selecionadas,:]
+# st.sidebar.markdown("""---""")
+# #filtro de data
+# linhas_selecionadas = df1['Order_Date'] < date_slider
+# df1=df1.loc[linhas_selecionadas,:]
 
-#Filtro de tipo de tráfego 
-linhas_selecionadas=df1['Road_traffic_density'].isin(traffic_options)
-df1=df1.loc[linhas_selecionadas,:] 
+# #Filtro de tipo de tráfego 
+# linhas_selecionadas=df1['Road_traffic_density'].isin(traffic_options)
+# df1=df1.loc[linhas_selecionadas,:] 
 #=================================================================
 ##Layout no Streamilit
 ##================================================================
